@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical portfolio of Mduduzi Miya">
+    <title>Mduduzi Miya | Technical Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/components/cards.css">
+    <link rel="stylesheet" href="css/components/skill-bars.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header id="global-header" class="site-header"></header>
+
+    <main id="scroll-viewport">
+        
+        <section id="home-hero" class="panel scroll-locked">
+            <div class="hero-content">
+                <h1>Mduduzi Miya</h1>
+                <p class="subtitle">Technical Portfolio & Engineering Showcase</p>
+                <button class="cta-arrow">↓</button>
+            </div>
+        </section>
+        
+        <section id="home-about" class="panel">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Engineering-driven development focusing on low-level architectures, algorithmic computing, and software logic.</p>
+            </div>
+        </section>
+
+        <section id="home-skills" class="panel">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <div class="skill-wrapper">
+                    <label>Embedded Systems / C++</label>
+                    <div class="progress-bar"><div class="fill" data-progress="90%"></div></div>
+                </div>
+                <div class="skill-wrapper">
+                    <label>Software Architecture</label>
+                    <div class="progress-bar"><div class="fill" data-progress="85%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="home-contact" class="panel">
+            <div class="container">
+                <h2>Contact & Inquiries</h2>
+                <form id="contact-form">
+                    <input type="text" id="form-name" placeholder="Name" required>
+                    <input type="email" id="form-email" placeholder="Recruiter Email" required>
+                    <textarea id="form-message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="side-nav-arrows">
+        <button id="nav-arrow-up" class="arrow-btn">↑</button>
+        <button id="nav-arrow-down" class="arrow-btn">↓</button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/sectionScroll.js"></script>
+</body>
+</html>
