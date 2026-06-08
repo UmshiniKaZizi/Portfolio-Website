@@ -189,7 +189,7 @@ body.page-exiting {
 /* --- APPENDED MISSING CONTAINER ELEMENTS FROM HTML --- */
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 0 2rem;
 }
 
@@ -270,4 +270,32 @@ body.page-exiting {
 #contact-form button:hover {
     background: #A7AFB6;
     color: #1A1A1A;
+}
+.project-video {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.project-video video {
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* {
+    outline: 1px solid rgba(255, 0, 0, 0.3) !important;
+}*/
+.project-subtitle {
+    font-family: 'Trajan', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #666;
+
+    width: 100%;
+    text-align: center;
 }
