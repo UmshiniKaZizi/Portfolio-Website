@@ -79,3 +79,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const expertiseCards = [
+    {
+        title: "Electronics",
+        description:
+            "Explore projects involving Arduino, microcontrollers, embedded programming, and electronics design.",
+        image: "assets/images/expertise/embedded.jpg",
+        link: "electronics.html"
+    },
+
+    {
+        title: "Software Development",
+        description:
+            "View software projects showcasing problem solving, application development, and programming expertise.",
+        image: "assets/images/expertise/software.jpg",
+        link: "software engineering.html"
+    },
+
+    {
+        title: "Game Development",
+        description:
+            "Discover game projects built with Unity, C#, and interactive design principles.",
+        image: "assets/images/expertise/gamedev.jpg",
+        link: "game development.html"
+    }
+];
+
+function renderExpertiseCards() {
+    const container = document.getElementById("expertise-container");
+
+    if (!container) return;
+
+    container.innerHTML = expertiseCards
+        .map(
+            card => `
+            <a href="${card.link}" class="expertise-card">
+                <img src="${card.image}" alt="${card.title}">
+                
+                <div class="card-content">
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                </div>
+            </a>
+        `
+        )
+        .join("");
+}
+
+document.addEventListener("DOMContentLoaded", renderExpertiseCards);
