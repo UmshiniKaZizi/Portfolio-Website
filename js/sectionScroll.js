@@ -50,3 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     updateArrowControls();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const btn = document.getElementById("viewCodeBtn");
+
+    if (btn) {
+        btn.addEventListener("click", () => {
+            window.location.href = "access control.html";
+        });
+    }
+
+});

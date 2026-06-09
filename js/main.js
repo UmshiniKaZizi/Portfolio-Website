@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // Code for the navigation bar
+
+    // NAVIGATION LINKS
     const navigationLinks = [
         { name: 'Home', route: 'index.html', isDropdown: false },
-        { 
-            name: 'Expertise', 
-            isDropdown: true, 
+        {
+            name: 'Expertise',
+            isDropdown: true,
             children: [
                 { name: 'Electronics', route: 'electronics.html' },
                 { name: 'Software Development', route: 'software development.html' },
@@ -15,33 +15,33 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Contact', route: 'index.html', hash: 'home-contact', isDropdown: false }
     ];
 
-    // Find the header container
+    // BUILD HEADER NAV
     const headerContainer = document.getElementById('global-header');
-    
+
     if (headerContainer) {
-        // Find the current page 
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
-        // Start building the nav
         let headerMarkup = `<div class="logo">MM</div><nav class="js-nav-container">`;
 
-        
         navigationLinks.forEach(item => {
             if (item.isDropdown) {
-               
+
+                // Dropdown group
                 headerMarkup += `
                     <div class="dropdown">
                         <button class="dropbtn">${item.name}</button>
                         <div class="dropdown-content">`;
-                
+
                 item.children.forEach(child => {
                     const isActive = currentPage === child.route ? 'active' : '';
                     headerMarkup += `<button class="nav-custom-btn ${isActive}" data-route="${child.route}">${child.name}</button>`;
                 });
 
                 headerMarkup += `</div></div>`;
+
             } else {
-                
+
+                // Standard nav button
                 const isActive = (currentPage === item.route && !item.hash) ? 'active' : '';
                 const hashData = item.hash ? `data-hash="${item.hash}"` : '';
                 headerMarkup += `<button class="nav-custom-btn ${isActive}" data-route="${item.route}" ${hashData}>${item.name}</button>`;
@@ -49,15 +49,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         headerMarkup += `</nav>`;
-        
-       
         headerContainer.innerHTML = headerMarkup;
     }
 
-    // page transition
+    // PAGE TRANSITION
     const customButtons = document.querySelectorAll('.nav-custom-btn');
-    
-    
+
     document.body.classList.add('page-loaded');
 
     customButtons.forEach(button => {
@@ -65,10 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const destinationPage = button.getAttribute('data-route');
             const destinationHash = button.getAttribute('data-hash');
 
-            
             document.body.classList.add('page-exiting');
 
-           
+            // Wait for fade-out before navigating
             setTimeout(() => {
                 if (destinationHash) {
                     window.location.href = `${destinationPage}#${destinationHash}`;
@@ -80,50 +76,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// EXPERTISE CARDS DATA
 const expertiseCards = [
     {
         title: "Electronics",
-        description:
-            "Explore projects involving Arduino, microcontrollers, embedded programming, and electronics design.",
+        description: "Explore projects involving Arduino, microcontrollers, embedded programming, and electronics design.",
         image: "assets/images/expertise/embedded.jpg",
         link: "electronics.html"
     },
-
     {
         title: "Software Development",
-        description:
-            "View software projects showcasing problem solving, application development, and programming expertise.",
+        description: "View software projects showcasing problem solving, application development, and programming expertise.",
         image: "assets/images/expertise/software.jpg",
         link: "software engineering.html"
     },
-
     {
         title: "Game Development",
-        description:
-            "Discover game projects built with Unity, C#, and interactive design principles.",
+        description: "Discover game projects built with Unity, C#, and interactive design principles.",
         image: "assets/images/expertise/gamedev.jpg",
         link: "game development.html"
     }
 ];
 
+// PLACE EXPERTISE CARDS INTO CONTAINER
 function renderExpertiseCards() {
     const container = document.getElementById("expertise-container");
 
     if (!container) return;
 
     container.innerHTML = expertiseCards
-        .map(
-            card => `
+        .map(card => `
             <a href="${card.link}" class="expertise-card">
                 <img src="${card.image}" alt="${card.title}">
-                
                 <div class="card-content">
                     <h3>${card.title}</h3>
                     <p>${card.description}</p>
                 </div>
             </a>
-        `
-        )
+        `)
         .join("");
 }
 

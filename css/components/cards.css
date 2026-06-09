@@ -1,7 +1,9 @@
+/* EXPERTISE SECTION LAYOUT */
 .expertise-section {
     padding: 6rem 2rem;
 }
 
+/* 3-column card grid */
 .expertise-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,6 +11,7 @@
     margin-top: 3rem;
 }
 
+/* CARD */
 .expertise-card {
     display: block;
     text-decoration: none;
@@ -31,6 +34,7 @@
     object-fit: cover;
 }
 
+/* CARD CONTENT */
 .card-content {
     padding: 1.5rem;
 }
@@ -43,6 +47,7 @@
     line-height: 1.6;
 }
 
+/* MOBILE: horizontal scroll carousel */
 @media (max-width: 768px) {
 
     .expertise-container {
@@ -54,17 +59,17 @@
 
         padding-bottom: 1rem;
 
-        scrollbar-width: none;
+        scrollbar-width: none; /* Firefox */
     }
 
     .expertise-container::-webkit-scrollbar {
-        display: none;
+        display: none; /* Chrome/Safari */
     }
 
+    /* Each card snaps to center on swipe */
     .expertise-card {
         min-width: 85%;
         flex-shrink: 0;
-
         scroll-snap-align: center;
     }
 }
