@@ -29,15 +29,15 @@
 
                 <h1 class="hero-title">Electronics </h1>
 
-                
+
                 <button class="cta-arrow">↓</button>
-                   
+
 
             </div>
 
         </section>
 
-        <section id="elec-access-control" class="panel">
+        <section id="elec-access-control" class="panel panel1">
             <div class="container">
 
                 <h2 class="section-title">Embedded Access Control System</h2>
@@ -60,7 +60,7 @@
         </section>
 
         <!-- BILL OF MATERIALS -->
-        <section id="elec-bom" class="panel">
+        <section id="elec-bom" class="panel panel2">
             <div class="container">
 
                 <h2 class="section-title">Bill Of Materials</h2>
@@ -86,7 +86,7 @@
         </section>
 
         <!-- IMPLEMENTATION -->
-        <section id="elec-implementation" class="panel">
+        <section id="elec-implementation" class="panel panel3">
             <div class="container">
 
                 <h2 class="section-title">Implementation</h2>
@@ -113,22 +113,22 @@
                             actuation to 0 degrees (1ms pulse) for the locked state and 90 degrees (1.5ms pulse) to
                             simulate unlocking a mechanism.</p>
 
-                      
+
                     </section>
                 </div>
 
             </div>
         </section>
-        <section id="elec-implementation" class="panel">
+        <section id="elec-implementation" class="panel panel2">
             <div class="container">
 
-                
+
 
                 <div class="implementation-body">
                     <section id="project-summary">
 
 
-                        
+
                         <p>To handle security threats, the firmware incorporates a tiered intrusion detection routine
                             that escalates response severity with consecutive failed entries, moving from a 3-second
                             dual-LED flash (red and yellow) to an intensified 5-second flash, and culminating in a
@@ -152,7 +152,7 @@
         </section>
 
         <!-- CODE PREVIEW -->
-        <section id="elec-code-preview" class="panel">
+        <section id="elec-code-preview" class="panel panel2">
 
 
             <div class="container">
@@ -193,7 +193,7 @@
 
 
 
-        <section id="elec-flex-sensor" class="panel">
+        <section id="elec-flex-sensor" class="panel panel3">
             <div class="container">
                 <h2 class="section-title">Flex Sensor Angle Detection System</h2>
                 <h3 class="project-subtitle">
@@ -227,56 +227,72 @@
                 </div>
             </div>
         </section>
-        <section id="elec-flex-sensor" class="panel">
+        <section id="elec-implementation" class="panel panel3">
+            <div class="container">
+                <div class="implementation-body">
+                    <h2 class="section-title">Implementation</h2>
+                    <p>
+                        This project details the design and implementation of an analog flex sensor authentication
+                        subsystem
+                        structured to operate within a larger cryptographic security application. Utilizing a SEN-10264
+                        flex
+                        sensor, the system accurately detects mechanical bend angles between 0 degrees and 100 degrees.
+                        The
+                        complete system architecture is organized into three unified functional stages: signal
+                        acquisition
+                        and conditioning, threshold detection via a comparator ladder, and logic verification for visual
+                        output control. By monitoring physical flexion sequences, the subsystem determines whether a
+                        specific user-input bend angle meets authorization requirements.
+                    </p>
+                    <p>
+                        The signal acquisition stage employs a Wheatstone bridge configuration to translate variations
+                        in
+                        sensor resistance into a differential voltage output. Initial sensor characterization
+                        established a
+                        flat-state resistance of 58 kΩ and an operational range showing highly linear behavior up to 90
+                        degrees. An instrumentation amplifier, constructed using low-power operational amplifiers,
+                        provides
+                        critical common-mode noise rejection to eliminate human manual artifacts while amplifying the
+                        bridge's small differential changes. To protect signal integrity against hardware aging, a
+                        calibration potentiometer is embedded directly into the sensor arm of the bridge, enabling
+                        manual
+                        re-balancing over time.
+                    </p>
+                </div>
+            </div>
 
-            <div class="implementation-body">
-                <h2 class="section-title">Implementation</h2>
-                <p>
-                    This project details the design and implementation of an analog flex sensor authentication subsystem
-                    structured to operate within a larger cryptographic security application. Utilizing a SEN-10264 flex
-                    sensor, the system accurately detects mechanical bend angles between 0 degrees and 100 degrees. The
-                    complete system architecture is organized into three unified functional stages: signal acquisition
-                    and conditioning, threshold detection via a comparator ladder, and logic verification for visual
-                    output control. By monitoring physical flexion sequences, the subsystem determines whether a
-                    specific user-input bend angle meets authorization requirements.
-                </p>
-                <p>
-                    The signal acquisition stage employs a Wheatstone bridge configuration to translate variations in
-                    sensor resistance into a differential voltage output. Initial sensor characterization established a
-                    flat-state resistance of 58 kΩ and an operational range showing highly linear behavior up to 90
-                    degrees. An instrumentation amplifier, constructed using low-power operational amplifiers, provides
-                    critical common-mode noise rejection to eliminate human manual artifacts while amplifying the
-                    bridge's small differential changes. To protect signal integrity against hardware aging, a
-                    calibration potentiometer is embedded directly into the sensor arm of the bridge, enabling manual
-                    re-balancing over time.
-                </p>
-                
-            </div>
-            </div>
         </section>
-<section id="elec-flex-sensor" class="panel">
+        <section id="elec-implementation" class="panel panel3">
+            <div class="container">
+                <div class="implementation-body">
 
-            <div class="implementation-body">
-                
-                <p>
-                    Threshold detection is achieved using a multi-stage comparator ladder network that translates the
-                    conditioned analog signal into discrete digital steps. The circuit utilizes ten voltage comparators
-                    configured with non-inverting inputs tied to the amplified sensor voltage, while their inverting
-                    inputs connect to a precision resistor divider ladder. This configuration establishes distinct
-                    reference thresholds calibrated at 10-degree increments. As the sensor is flexed, each sequential
-                    threshold is surpassed, switching the respective comparator output to a high logic state and turning
-                    on a corresponding LED to create a real-time, visual bar-graph indication of the bend angle.
-                </p>
-                <p>
-                    To provide secure system authorization, the design integrates a hardware-level logic verification
-                    circuit that isolates a targeted code window between 90 degrees and 100 degrees. The reference
-                    outputs from the final two comparator stages are fed directly into an XOR logic gate, which outputs
-                    a high state exclusively when its inputs differ. This condition isolates the maximum valid flex
-                    window where the final stage is reached. The XOR output activates a dedicated green indicator LED
-                    through a final comparator stage while simultaneously driving an inverting NOT gate to hold a red
-                    error LED active across all other non-matching angular configurations.
-                </p>
-            </div>
+                    <p>
+                        Threshold detection is achieved using a multi-stage comparator ladder network that translates
+                        the
+                        conditioned analog signal into discrete digital steps. The circuit utilizes ten voltage
+                        comparators
+                        configured with non-inverting inputs tied to the amplified sensor voltage, while their inverting
+                        inputs connect to a precision resistor divider ladder. This configuration establishes distinct
+                        reference thresholds calibrated at 10-degree increments. As the sensor is flexed, each
+                        sequential
+                        threshold is surpassed, switching the respective comparator output to a high logic state and
+                        turning
+                        on a corresponding LED to create a real-time, visual bar-graph indication of the bend angle.
+                    </p>
+                    <p>
+                        To provide secure system authorization, the design integrates a hardware-level logic
+                        verification
+                        circuit that isolates a targeted code window between 90 degrees and 100 degrees. The reference
+                        outputs from the final two comparator stages are fed directly into an XOR logic gate, which
+                        outputs
+                        a high state exclusively when its inputs differ. This condition isolates the maximum valid flex
+                        window where the final stage is reached. The XOR output activates a dedicated green indicator
+                        LED
+                        through a final comparator stage while simultaneously driving an inverting NOT gate to hold a
+                        red
+                        error LED active across all other non-matching angular configurations.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -289,6 +305,14 @@
 
     <script src="js/main.js"></script>
     <script src="js/sectionScroll.js"></script>
+    <footer class="site-footer">
+        <p class="footer-text">© 2026 Mduduzi Miya</p>
+
+        <a class="github-link" href="https://github.com/UmshiniKaZizi" target="_blank" aria-label="GitHub Profile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo">
+            <span>GitHub</span>
+        </a>
+    </footer>
 </body>
 
 </html>

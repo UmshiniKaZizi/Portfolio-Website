@@ -91,7 +91,7 @@
 
     background-color: #1A1A1A;
 
-    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: width 5.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .skill-percentage {
@@ -117,6 +117,11 @@
 
     .section-title {
         font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+    .skills-title {
+        font-size: 1.3rem;
     }
 
     .skill-item {
@@ -126,5 +131,31 @@
 
     .skill-bar-column {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #home-skills {
+        padding: 0 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .skills-title {
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+
+    .skill-name {
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+
+    .skill-percentage {
+        font-size: 0.85rem;
     }
 }

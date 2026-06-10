@@ -12,13 +12,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    /*background-image: url("../../assets/images/homepage/hero.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 32%;
-
-    overflow: hidden;
-    box-sizing: border-box;*/
+    
 }
 
 /* =========================
@@ -29,11 +23,9 @@
     position: absolute;
     inset: 0;
 
-    background: radial-gradient(
-        circle,
-        rgba(40, 40, 40, 0.15) 0%,
-        rgba(18, 18, 18, 0.45) 100%
-    );
+    background: radial-gradient(circle,
+            rgba(40, 40, 40, 0.15) 0%,
+            rgba(18, 18, 18, 0.45) 100%);
 
     z-index: 1;
     pointer-events: none;
@@ -47,7 +39,8 @@
     position: relative;
     z-index: 2;
 
-    margin-top: 8rem; /* adjust as needed */
+    margin-top: 8rem;
+    /* adjust as needed */
 
     width: 100%;
     max-width: 900px;
@@ -106,7 +99,7 @@
 }
 
 .hero-tags span {
-    font-family: Arial, sans-serif;
+    font-family: Trajan, serif;
     font-size: 0.85rem;
 
     text-transform: uppercase;
@@ -132,7 +125,7 @@
     border: 1px solid #F8F9FA;
     padding: 14px 28px;
 
-    font-family: 'Trajan', 'Times New Roman', serif;
+    font-family: 'Trajan', serif;
     font-size: 0.95rem;
 
     letter-spacing: 2px;
@@ -173,7 +166,12 @@
    ========================= */
 
 @keyframes bounceIndicator {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: translateY(0);
     }
 

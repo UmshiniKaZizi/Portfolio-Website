@@ -17,7 +17,8 @@
     text-decoration: none;
     color: inherit;
 
-    background: #CED4DA;;
+    background: #CED4DA;
+    ;
     border-radius: 16px;
     overflow: hidden;
 
@@ -55,21 +56,20 @@
         overflow-x: auto;
         gap: 1rem;
 
+        padding: 0 1rem 1rem;
+
         scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
 
-        padding-bottom: 1rem;
-
-        scrollbar-width: none; /* Firefox */
+    .expertise-card {
+        flex: 0 0 calc(100% - 2rem);
+        scroll-snap-align: center;
     }
 
     .expertise-container::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
+        display: none;
+        /* Chrome/Safari */
     }
 
-    /* Each card snaps to center on swipe */
-    .expertise-card {
-        min-width: 85%;
-        flex-shrink: 0;
-        scroll-snap-align: center;
-    }
 }

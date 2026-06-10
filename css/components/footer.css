@@ -1,0 +1,39 @@
+.site-footer {
+    width: 100%;
+    padding: 2rem 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #CED4DA;
+    background-color: #F8F9FA;
+
+    font-family: var(--font-ui);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    text-decoration: none;
+    color: #1A1A1A;
+
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+    opacity: 0.6;
+}
+
+.github-link img {
+    width: 20px;
+    height: 20px;
+}

@@ -93,7 +93,8 @@
 .code-container {
     display: grid;
     grid-template-columns: 60px 1fr;
-    align-items: start; /* KEY FIX — prevents grid stretch misaligning numbers */
+    align-items: start;
+    /* KEY FIX — prevents grid stretch misaligning numbers */
 
     max-height: 55vh;
     overflow: auto;
@@ -135,6 +136,59 @@
 }
 
 /* BACKGROUND */
-body {
+/*body {
     background-color: #0b0f14;
+}*/
+.code-container {
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    align-items: start;
+    width: 100%;
+}
+
+#code-display {
+    min-width: 0;
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+    .source-page {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .source-title {
+        font-size: 1.4rem;
+    }
+
+
+    .code-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+        padding: 0.75rem 1rem;
+    }
+
+    #copy-btn {
+        align-self: flex-start;
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+
+    .code-container {
+        grid-template-columns: 44px 1fr;
+        font-size: 0.8rem;
+        max-height: 60vh;
+    }
+
+    #line-numbers {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    #code-display {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
 }
