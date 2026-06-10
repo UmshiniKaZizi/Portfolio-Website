@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,107 @@
     <link rel="stylesheet" href="css/components/cards.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components/skill bar.css">
 </head>
+
 <body>
 
     <header id="global-header" class="site-header"></header>
 
     <main id="scroll-viewport">
-        
-        <section id="software-hero" class="panel scroll-locked">
-            <div class="hero-content">
-                <h1>Software Engineering</h1>
-                <button class="cta-arrow">↓</button>
+
+        <section id="elec-hero" class="panel scroll-locked">
+
+            <div class="hero-bg">
+                <img src="assets/images/software/software.png" alt="Electronics & Microcontrollers Background">
             </div>
+
+            <div class="hero-content">
+
+                <h1 class="hero-title">Software Development </h1>
+
+                
+                <button class="cta-arrow">↓</button>
+                   
+
+            </div>
+
         </section>
-        
-        <section id="soft-2048" class="panel">
+
+
+        <section id="software-showcase" class="panel">
             <div class="container">
-                <h2>Reverse 2048: Algorithm Showdown</h2>
-                <p>Algorithmic calculation models analyzing predictive path evaluation heuristics using optimal memory constraints.</p>
+
+                <h2 class="section-title">RabaRush: Full-Stack Morabaraba Platform</h2>
+
+                <div class="project-details">
+                    <h3 class="project-subtitle">
+                        An online, multi-user web application featuring a scalable Node.js and Express backend,
+                        relational MySQL database architecture, and real-time state management pipelines.
+                    </h3>
+                </div>
+
+                <div class="project-video">
+                    <video controls preload="metadata">
+                        <source src="assets/videos/raba.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+
             </div>
         </section>
 
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+                <h2 class="section-title">Implementation</h2>
+
+                <div class="implementation-body">
+                    <p>
+                        This project focuses on the design, engineering, and deployment of the backend service layer and
+                        secure transaction pipelines for RabaRush, a synchronized online web platform for the
+                        traditional game Morabaraba. Built utilizing Node.js and Express.js, the backend acts as a
+                        highly modular centralized engine responsible for routing, handling concurrent client requests,
+                        and enforcing strict server-side validation boundaries. The system isolates business logic from
+                        the presentation layer to protect user interactions, prevent data tampering, and manage state
+                        transitions safely during multi-user gameplay sessions.
+                    </p>
+                    <p>
+                        Data management and schema integrity are handled through a persistent relational MySQL database
+                        system, which securely tracks real-time data fields including customer registration profiles,
+                        comprehensive match histories, and player win-loss tracking. To govern account security and
+                        satisfy technical data safety requirements, a robust authentication pipeline was engineered.
+                        Passwords undergo computational cryptographic hashing via bcrypt before database insertion, and
+                        secure, stateless session tracking is established by provisioning JSON Web Tokens (JWT) to
+                        authorize subsequent actions across protected gaming APIs.
+                    </p>
+                  
+                </div>
+
+            </div>
+        </section>
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+            
+
+                <div class="implementation-body">
+                   
+                    <p>
+                        In addition to core account services, the backend safely facilitates the platform's multi-tenant
+                        features, managing user coin balances and processing transactional systems securely to prevent
+                        race conditions during real-time multiplayer engagements. To bridge the server architecture with
+                        the user-facing application, a clean frontend login component was developed in vanilla
+                        JavaScript to manage payload delivery, parse server verification tokens, and handle asynchronous
+                        user session lifecycles. Designed in alignment with structural principles outlined in the SWEBOK
+                        framework, the complete ecosystem underwent rigorous regression testing using Postman to
+                        validate api endpoint durability, verify edge cases, and ensure a highly secure, reliable MVP
+                        foundation.
+                    </p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
     <div class="side-nav-arrows">
@@ -38,6 +119,7 @@
     </div>
 
     <script src="js/main.js"></script>
-    <script src="js/section-scroll.js"></script>
+    <script src="js/sectionScroll.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Control Source Code</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/code-viewer.css">
+</head>
+
+<body>
+
+
+
+<main class="source-page">
+
+    <a href="electronics.html" class="back-btn">
+        ← Back to Project
+    </a>
+
+    <h1 class="source-title">
+        Embedded Access Control System
+    </h1>
+
+    <p class="source-description">
+        AVR Assembly implementation of a keypad-controlled access
+        system featuring interrupt-driven input handling, LCD output,
+        SRAM PIN storage, servo-actuated locking, and alarm-state
+        security control.
+    </p>
+
+    <div class="code-editor">
+
+        <div class="code-header">
+
+            <div class="file-info">
+                <span class="file-name">
+                    access_control.asm
+                </span>
+
+                <span class="language-badge">
+                    AVR Assembly
+                </span>
+            </div>
+
+            <button id="copy-btn">
+                Copy
+            </button>
+
+        </div>
+
+        <div class="code-container">
+
+            <div id="line-numbers"></div>
+
+            <pre id="code-display">
+Loading source...
+            </pre>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/code-viewer.js"></script>
+
+</body>
+</html>

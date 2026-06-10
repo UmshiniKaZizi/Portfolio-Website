@@ -1,0 +1,140 @@
+.source-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    background: #0b0f14;
+    min-height: 100vh;
+}
+
+/* BACK BUTTON */
+.back-btn {
+    text-decoration: none;
+    color: #8b949e;
+    font-family: 'Trajan', serif;
+}
+
+.back-btn:hover {
+    color: #ffffff;
+}
+
+/* TITLES */
+.source-title {
+    font-family: 'Trajan', serif;
+    color: #e6edf3;
+}
+
+.source-description {
+    color: #8b949e;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* =========================
+   CODE EDITOR
+========================= */
+.code-editor {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.code-header {
+    background: #161b22;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.file-name {
+    font-family: monospace;
+    color: #c9d1d9;
+}
+
+.language-badge {
+    background: #21262d;
+    color: #c9d1d9;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+}
+
+#copy-btn {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#copy-btn:hover {
+    background: #2ea043;
+}
+
+/* =========================
+   CODE LAYOUT
+========================= */
+.code-container {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: start; /* KEY FIX — prevents grid stretch misaligning numbers */
+
+    max-height: 55vh;
+    overflow: auto;
+
+    font-family: Consolas, Monaco, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* LINE NUMBERS */
+#line-numbers {
+    background: #161b22;
+    color: #6e7681;
+
+    padding: 1rem 0.75rem;
+
+    text-align: right;
+    user-select: none;
+
+    position: sticky;
+    left: 0;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* CODE */
+#code-display {
+    margin: 0;
+    padding: 1rem;
+
+    color: #c9d1f0;
+
+    white-space: pre;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    overflow-x: auto;
+}
+
+/* BACKGROUND */
+body {
+    background-color: #0b0f14;
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components/hero.css">
     <link rel="stylesheet" href="css/components/cards.css">
-    <link rel="stylesheet" href="css/components/skill-bars.css">
+    <link rel="stylesheet" href="css/components/skill bar.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -18,38 +18,206 @@
 
     <main id="scroll-viewport">
         
-        <section id="home-hero" class="panel scroll-locked">
+        <section id="home-section" class="panel scroll-locked">
+            <div class ="hero-overlay"> </div>
+
             <div class="hero-content">
-                <h1>Mduduzi Miya</h1>
-                <p class="subtitle">Technical Portfolio & Engineering Showcase</p>
-                <button class="cta-arrow">↓</button>
+                <h1 class = "hero-title">Mduduzi Miya</h1>
+
+                <p class="hero-subtitle">Technical Portfolio & Engineering Showcase</p>
+                
+                <div class = "hero-tags">
+                    <span>Embedded Systems</span>
+                    <span>Game Development</span>
+                    <span>Software Engineering</span>
+                </div>
+                <!-- This button still needs to be changed -->
+                <button class="cta-arrow" aria-label="Explore Portfolio">Explore Portfolio 
+                <span class="arrow-icon">↓</span>
+                </button>
             </div>
         </section>
         
         <section id="home-about" class="panel">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Engineering-driven development focusing on low-level architectures, algorithmic computing, and software logic.</p>
-            </div>
-        </section>
+    <div class="about-container">
 
-        <section id="home-skills" class="panel">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skill-wrapper">
-                    <label>Embedded Systems / C++</label>
-                    <div class="progress-bar"><div class="fill" data-progress="90%"></div></div>
+        <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                I am Mduduzi Miya, a final-year student at Wits University pursuing
+                a degree in Engineering in Digital Arts. I am passionate about
+                creating and bringing ideas to life through software development,
+                game development, and electronics.
+            </p>
+
+            <p>
+                My studies have equipped me with a diverse set of technical and
+                creative skills, allowing me to approach challenges from multiple
+                perspectives and develop innovative solutions.
+            </p>
+
+            <p>
+                Throughout this portfolio, you will find projects that showcase my
+                abilities, experiences, and growth as a developer and creator.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="assets/images/homepage/IMG_7985 (1).jpeg" alt="Mduduzi Miya">
+        </div>
+
+    </div>
+</section>
+
+<section id="home-skills" class="panel">
+    <div class="skills-section">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        
+
+        <div class="skills-container">
+
+            <h3 class="skills-title">Electronics</h3>
+
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        Analog Electronics
+                    </span>
                 </div>
-                <div class="skill-wrapper">
-                    <label>Software Architecture</label>
-                    <div class="progress-bar"><div class="fill" data-progress="85%"></div></div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:65%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">65%</span>
                 </div>
+
             </div>
-        </section>
+
+            
+
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        AVR Assembly
+                    </span>
+                </div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:50%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">50%</span>
+                </div>
+
+            </div>
+
+            <h3 class="skills-title">Software Development</h3>
+
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        C++
+                    </span>
+                </div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:75%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+            </div>
+
+            
+
+            
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        HTML / CSS /JavaScript
+                    </span>
+                </div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:50%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">50%</span>
+                </div>
+
+            </div>
+
+            <h3 class="skills-title">Game Development</h3>
+
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        Unity
+                    </span>
+                </div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:65%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">65%</span>
+                </div>
+
+            </div>
+
+            <div class="skill-item">
+
+                <div class="skill-name-column">
+                    <span class="skill-name">
+                        C#
+                    </span>
+                </div>
+
+                <div class="skill-bar-column">
+                    <div class="skill-track">
+                        <div class="skill-fill" style="width:70%;"></div>
+                    </div>
+
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="home-expertise" class="panel">
+    <div class="expertise-section">
+
+        <h2 class="section-title">Explore My Expertise</h2>
+
+        <div id="expertise-container" class="expertise-container">
+           
+        </div>
+
+    </div>
+</section>
 
         <section id="home-contact" class="panel">
             <div class="container">
-                <h2>Contact & Inquiries</h2>
+                <h2 class="section-title">Contact & Inquiries</h2>
                 <form id="contact-form">
                     <input type="text" id="form-name" placeholder="Name" required>
                     <input type="email" id="form-email" placeholder="Recruiter Email" required>

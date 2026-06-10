@@ -1,0 +1,130 @@
+/* =========================
+   TECHNICAL SKILLS SECTION
+   ========================= */
+
+#home-skills {
+    padding: 0 5rem;
+}
+
+.skills-section {
+    width: 100%;
+    max-width: 1200px;
+
+    font-family: 'Garamond', serif;
+    color: #1A1A1A;
+}
+
+.section-title {
+    font-family: 'Trajan', serif;
+    font-size: 2.5rem;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.skills-title {
+    font-family: 'Trajan', serif;
+    font-size: 1.5rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-name-column {
+    display: flex;
+    align-items: center;
+}
+
+.skill-name {
+    font-family: 'Trajan', serif;
+    font-size: 1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-bar-column {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.skill-track {
+    position: relative;
+    flex: 1;
+
+    height: 3px;
+    background-color: #E5E5E5;
+
+    overflow: hidden;
+}
+
+.skill-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 0;
+
+    background-color: #1A1A1A;
+
+    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.skill-percentage {
+    min-width: 50px;
+
+    text-align: right;
+
+    font-size: 0.95rem;
+    color: #666666;
+
+    font-variant-numeric: tabular-nums;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    #home-skills {
+        padding: 0 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skill-item {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-bar-column {
+        width: 100%;
+    }
+}
