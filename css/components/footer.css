@@ -33,7 +33,9 @@
     opacity: 0.6;
 }
 
+
 .github-link img {
     width: 20px;
     height: 20px;
+    display: inline-block;
 }
