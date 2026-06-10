@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description:
                 "View software projects showcasing problem solving, application development, and programming expertise.",
             image: "assets/images/software/software.png",
-            link: "software engineering.html",
+            link: "software development.html",
         },
         {
             title: "Game Development",
