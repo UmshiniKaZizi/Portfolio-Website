@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/components/cards.css">
     <link rel="stylesheet" href="css/components/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components/cards.css">
     <link rel="stylesheet" href="css/components/skill bar.css">
 </head>
 
@@ -19,12 +20,24 @@
 
     <main id="scroll-viewport">
 
-        <section id="game-hero" class="panel scroll-locked">
-            <div class="hero-content">
-                <h1>Game Development</h1>
-                <button class="cta-arrow">↓</button>
+       <section id="elec-hero" class="panel scroll-locked">
+
+            <div class="hero-bg">
+                <img src="assets/images/games/game.png" alt="Game Development Background">
             </div>
+
+            <div class="hero-content">
+
+                <h1 class="hero-title">Game Development </h1>
+
+                
+                <button class="cta-arrow">↓</button>
+                   
+
+            </div>
+
         </section>
+
 
         <section id="game-showcase" class="panel">
             <div class="container">
@@ -40,7 +53,7 @@
 
                 <div class="project-video">
                     <video controls preload="metadata">
-                        <source src="assets/videos/game_demo.mp4" type="video/mp4">
+                        <source src="assets/videos/game.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
@@ -53,8 +66,8 @@
 
                 <h2 class="section-title">Play The Game</h2>
 
-                <div class="project-cards-container">
-                    <div class="game-card">
+                <div class="expertise-container">
+                    <div class="expertise-card">
                         <div class="card-content">
                             <h3 class="card-title">Launch LOST/FOUND</h3>
                             <p class="card-description">
@@ -65,7 +78,7 @@
                                 integrated mechanics required to operate the extraction doorway before the level locks
                                 down.
                             </p>
-                            <a href="game/index.html" target="_blank" class="play-btn">
+                            <a href="https://umshinikazizi.itch.io/lost-found" target="_blank" class="play-btn">
                                 Play Web Version →
                             </a>
                         </div>
@@ -110,44 +123,221 @@
                 <h2 class="section-title">Game Review</h2>
 
                 <div class="implementation-body">
-                        <h3>Blog 1: Khasino as a Game of Skill, Respect, and Belonging</h3>
-                        
-                        <h4>1.1 Introduction</h4>
-                        <p>
-                            Khasino is a card game played across South Africa, especially in townships, rural areas, family homes, and neighbourhood spaces. It is the kind of game that can be found "eKhoneni nabo Malume", outside in the neighbourhood, or inside the living room during a family gathering. I have personally played Khasino in different places, including Thulamahashe, Kathlehong, and eMlazi. What is interesting is that even though these places are far apart, the game is known and recognised in all of them. More importantly, Khasino seems to attract a similar kind of player culture wherever it is played: serious, competitive players who do not treat it as a casual card game. At first, Khasino may look simple, but once play begins, its complexity becomes clear. The official rules explain that the game is played with a 40-card pack created by removing the picture cards from a standard 52-card deck, leaving cards numbered from one to ten in the four suits [2]. The objective is to capture points through important cards and scoring categories. Cards such as the ten of diamonds, often called "Mummy," the two of spades, and the aces carry special value, while points may also be gained through most cards and most spades depending on the mode of play [2]. This scoring system shows that Khasino is not only about luck. It is about paying attention, remembering cards, planning captures, and reading what opponents might be trying to do.
-                        </p>
+                    <h3>Blog 1: Khasino as a Game of Skill, Respect, and Belonging</h3>
 
-                        <h4>1.2 Mechanics, Memory, and Strategic Risk</h4>
-                        <p>
-                            One reason Khasino players take the game seriously is that the learning curve is high. It is not the kind of game a player can play once and immediately master. It takes repeated play, mistakes, correction, and losses before a player begins to understand deeper strategies. Players must learn to count cards, not by writing them down, but by remembering what has already been played and using that information to shape the next move. In many casino gambling contexts, card counting is discouraged, but in Khasino memory is part of the expected skill set. It separates beginners from experienced players. This is where Khasino becomes more than entertainment. It rewards attention, patience, and long-term thinking. The rulebook explains that players can create builds, where cards are grouped together to form a value, but a player must hold the card value they are building towards in their hand [2]. For example, a build of ten could be made from six, three, and one, but the player must have a ten to justify that build. This creates tension because another player may also hold the same value and capture the build. The rulebook refers to this risk as jeopardising [2]. In other words, every move carries risk. A player is not only playing cards; they are predicting opponents, reading the table, and protecting themselves from punishment. Khasino also includes compound builds and augmenting, which add more strategic depth. A compound build contains multiple sets of cards that equal the same value, while augmenting means adding to an existing build to increase its value [2]. These mechanics make the game feel like a battle of intelligence. Players are constantly testing each other. A strong player does not only think about the current move; they think several moves ahead. This is why Khasino players respect skill. A victory against experienced players is not easily dismissed as luck.
-                        </p>
+                    <h4>1.1 Introduction</h4>
+                    <p>
+                        Khasino is a card game played across South Africa, especially in townships, rural areas, family
+                        homes, and neighbourhood spaces. It is the kind of game that can be found "eKhoneni nabo
+                        Malume", outside in the neighbourhood, or inside the living room during a family gathering. I
+                        have personally played Khasino in different places, including Thulamahashe, Kathlehong, and
+                        eMlazi. What is interesting is that even though these places are far apart, the game is known
+                        and recognised in all of them. More importantly, Khasino seems to attract a similar kind of
+                        player culture wherever it is played: serious, competitive players who do not treat it as a
+                        casual card game. At first, Khasino may look simple, but once play begins, its complexity
+                        becomes clear. The official rules explain that the game is played with a 40-card pack created by
+                        removing the picture cards from a standard 52-card deck, leaving cards numbered from one to ten
+                        in the four suits. The objective is to capture points through important cards and scoring
+                        categories. Cards such as the ten of diamonds, often called "Mummy," the two of spades, and the
+                        aces carry special value, while points may also be gained through most cards and most spades
+                        depending on the mode of play. This scoring system shows that Khasino is not only about
+                        luck. It is about paying attention, remembering cards, planning captures, and reading what
+                        opponents might be trying to do.
+                    </p>
 
-                        <h4>1.3 Social Learning and Unwritten Knowledge</h4>
-                        <p>
-                            When analysing Khasino, it becomes clear that the official rulebook gives only part of the story. Many important gameplay practices are learned socially from experienced players rather than only from written rules. This matters because Khasino is not understood just by reading instructions; it is understood through repeated play, observation, correction, and sometimes embarrassment at the table. One example is the starting sequence. Before the game begins, cards are randomly placed face down, players pick cards, and the values determine who shuffles, who cuts, and who plays first. The player with the bigger card shuffles, while the player with the smaller card cuts and also plays first. In three-player and four-player games, direction matters because play moves anti-clockwise, and seating can even be adjusted to make sure the cutter plays first and the shuffler plays last. This shows that Khasino takes fairness and order seriously even before the first real move is made. The game does not casually allow someone to decide who begins; starting order is produced through a ritual of chance and hierarchy. Chowing, or capturing, is the main way players collect cards and score points. A player can capture by matching the value of a card on the table, by using a card to capture a sum, or by capturing a build with the correct matching card. For example, playing a seven can capture a three and a four. This means the table is never just a random collection of cards. Every card has potential value depending on what players are holding, what has already been played, and what opponents might be planning. This is similar to the general family of casino-style fishing card games, where players capture table cards by matching values or combinations [3].
-                        </p>
-
-                        <h4>1.4 Partnership, Restraint, and Fairness</h4>
-                        <p>
-                            In partner games, Khasino becomes even more complex because players cannot simply capture their partner's build. Instead, players may use shiya or drift to claim a partner's card before it reaches their home pile. This mechanic creates teamwork without allowing open communication. Partners must cooperate, but they cannot openly discuss the cards in their hands. This creates a silent partnership where players read each other's intentions through play rather than speech. Khasino therefore creates teamwork through restraint. The most skilled partners are not necessarily the ones who talk the most, but the ones who understand each other's strategies without breaking the rules. Fishing, or stealing, adds another layer of pressure. Being able to take the top card from an opponent's pile means that even captured cards are not always completely safe. This changes the emotional experience of play because a player must think not only about what is on the floor, but also about what is sitting on top of each opponent's home pile. The top card becomes exposed information. It can be used against the player if it matches a build, supports a capture, or helps an opponent extend a play. This makes Khasino feel tactical because the past is never fully gone; previous captures can still affect future moves. A particularly interesting balance mechanic appears around the value ten. Many beginners believe that building a ten makes them almost invincible. This belief makes sense because ten is a powerful value in Khasino, especially when connected to the ten of diamonds, known as Mummy. However, building a ten is only truly safe when a player controls all four tens. If another player has a ten, they can jeopardise the build by capturing it. This teaches beginners an important lesson: a strong-looking move can become dangerous if the player has not counted the cards properly. The game also has a balancing rule for this situation. If one player is dealt all four tens, the game must be redealt [2]. This prevents one player from having too much individual control over the strongest build value. However, in four-hand partner play, if partners together have all the tens, the situation is allowed. That creates a different kind of challenge. The advantage exists, but players must discover it without illegally discussing their cards. Since talking about the cards in hand is forbidden and can lead to disqualification, the game forces partners to communicate through play, memory, and timing rather than direct speech.
-                        </p>
-
-                        <h4>1.5 Khasino, Respect, and Games Literacy</h4>
-                        <p>
-                            For me, Khasino is almost like a rite of passage, especially in my family and in the neighbourhood where I grew up in Kathlehong, Zuma Section. It is not often that a seventeen-year-old can sit down with a fifty-eight-year-old uncle, compete seriously, and even trash talk him in a way that is accepted as part of the game. But Khasino creates that kind of space. Inside the game, age does not disappear completely, but it becomes less important than skill, confidence, and decision-making. The game allows younger and older people to interact differently. It breaks down generational gaps and creates a space where people can speak freely, laugh, compete, and still respect one another. One memory that stands out happened during Christmas. One of my uncles suggested that we play Khasino, and he was surprised to find out that I knew how to play. We played four hands, and I was the youngest person at the table. At first, I could feel that I was not being treated as a serious threat. I was just the young one joining the elders. But when my partner and I won the first game, the atmosphere changed. I was no longer viewed only as a child. I became a serious contender. That moment showed how powerful the game can be socially. Mastery of Khasino created bonds that ordinary conversation might not have created. This connects strongly to Zagal's concept of ludoliteracy. Zagal argues that understanding games is not only about playing them, but also about analysing how games create meaning through systems, rules, culture, and player experience [1]. Khasino is a good example because the meaning of the game does not only come from the cards. It comes from the people around the table, the seriousness of players, the trash talk, the memory skills, the family setting, and the respect that is earned through play. The rules create the structure, but the players create the culture.
-                        </p>
-
-                        <h4>1.6 Conclusion</h4>
-                        <p>
-                            Khasino should be understood as more than a card game. It is a competitive system, a social practice, and a cultural space. Its complexity creates respect for mastery, while its social nature brings people together across generations. In my own experience, Khasino allowed me to connect with older family members in a way that ordinary conversation might not have allowed. Through the game, I moved from being seen only as a child to being recognised as a serious player. That is what makes Khasino meaningful: it does not only test cards; it tests memory, confidence, patience, and the ability to belong at the table.
-                        </p>
-                    </div>
-
+                    
                 </div>
 
             </div>
-        </section>
 
+            </div>
+        </section>
+<section id="elec-implementation" class="panel">
+            <div class="container">
+
+                
+
+                <div class="implementation-body">
+                    
+
+                    <h4>1.2 Mechanics, Memory, and Strategic Risk</h4>
+                    <p>
+                        One reason Khasino players take the game seriously is that the learning curve is high. It is not
+                        the kind of game a player can play once and immediately master. It takes repeated play,
+                        mistakes, correction, and losses before a player begins to understand deeper strategies. Players
+                        must learn to count cards, not by writing them down, but by remembering what has already been
+                        played and using that information to shape the next move. In many casino gambling contexts, card
+                        counting is discouraged, but in Khasino memory is part of the expected skill set. It separates
+                        beginners from experienced players. This is where Khasino becomes more than entertainment. It
+                        rewards attention, patience, and long-term thinking. The rulebook explains that players can
+                        create builds, where cards are grouped together to form a value, but a player must hold the card
+                        value they are building towards in their hand. For example, a build of ten could be made
+                        from six, three, and one, but the player must have a ten to justify that build. This creates
+                        tension because another player may also hold the same value and capture the build. The rulebook
+                        refers to this risk as jeopardising. In other words, every move carries risk. A player is
+                        not only playing cards; they are predicting opponents, reading the table, and protecting
+                        themselves from punishment. Khasino also includes compound builds and augmenting, which add more
+                        strategic depth. A compound build contains multiple sets of cards that equal the same value,
+                        while augmenting means adding to an existing build to increase its value. These mechanics
+                        make the game feel like a battle of intelligence. Players are constantly testing each other. A
+                        strong player does not only think about the current move; they think several moves ahead. This
+                        is why Khasino players respect skill. A victory against experienced players is not easily
+                        dismissed as luck.
+                    </p>
+
+                    
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+             
+
+                <div class="implementation-body">
+                    
+
+                    <h4>1.3 Social Learning and Unwritten Knowledge</h4>
+                    <p>
+                        When analysing Khasino, it becomes clear that the official rulebook gives only part of the
+                        story. Many important gameplay practices are learned socially from experienced players rather
+                        than only from written rules. This matters because Khasino is not understood just by reading
+                        instructions; it is understood through repeated play, observation, correction, and sometimes
+                        embarrassment at the table. One example is the starting sequence. Before the game begins, cards
+                        are randomly placed face down, players pick cards, and the values determine who shuffles, who
+                        cuts, and who plays first. The player with the bigger card shuffles, while the player with the
+                        smaller card cuts and also plays first. In three-player and four-player games, direction matters
+                        because play moves anti-clockwise, and seating can even be adjusted to make sure the cutter
+                        plays first and the shuffler plays last. This shows that Khasino takes fairness and order
+                        seriously even before the first real move is made. The game does not casually allow someone to
+                        decide who begins; starting order is produced through a ritual of chance and hierarchy. Chowing,
+                        or capturing, is the main way players collect cards and score points. A player can capture by
+                        matching the value of a card on the table, by using a card to capture a sum, or by capturing a
+                        build with the correct matching card. For example, playing a seven can capture a three and a
+                        four. This means the table is never just a random collection of cards. Every card has potential
+                        value depending on what players are holding, what has already been played, and what opponents
+                        might be planning. This is similar to the general family of casino-style fishing card games,
+                        where players capture table cards by matching values or combinations.
+                    </p>
+
+                    
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+               
+
+                <div class="implementation-body">
+                    
+                    <h4>1.4 Partnership, Restraint, and Fairness</h4>
+                    <p>
+                        In partner games, Khasino becomes even more complex because players cannot simply capture their
+                        partner's build. Instead, players may use shiya or drift to claim a partner's card before it
+                        reaches their home pile. This mechanic creates teamwork without allowing open communication.
+                        Partners must cooperate, but they cannot openly discuss the cards in their hands. This creates a
+                        silent partnership where players read each other's intentions through play rather than speech.
+                        Khasino therefore creates teamwork through restraint. The most skilled partners are not
+                        necessarily the ones who talk the most, but the ones who understand each other's strategies
+                        without breaking the rules. Fishing, or stealing, adds another layer of pressure. Being able to
+                        take the top card from an opponent's pile means that even captured cards are not always
+                        completely safe. This changes the emotional experience of play because a player must think not
+                        only about what is on the floor, but also about what is sitting on top of each opponent's home
+                        pile. The top card becomes exposed information. It can be used against the player if it matches
+                        a build, supports a capture, or helps an opponent extend a play. This makes Khasino feel
+                        tactical because the past is never fully gone; previous captures can still affect future moves.
+                        A particularly interesting balance mechanic appears around the value ten. Many beginners believe
+                        that building a ten makes them almost invincible. This belief makes sense because ten is a
+                        powerful value in Khasino, especially when connected to the ten of diamonds, known as Mummy.
+                        However, building a ten is only truly safe when a player controls all four tens. If another
+                        player has a ten, they can jeopardise the build by capturing it. This teaches beginners an
+                        important lesson: a strong-looking move can become dangerous if the player has not counted the
+                        cards properly. The game also has a balancing rule for this situation. If one player is dealt
+                        all four tens, the game must be redealt. This prevents one player from having too much
+                        individual control over the strongest build value. However, in four-hand partner play, if
+                        partners together have all the tens, the situation is allowed. That creates a different kind of
+                        challenge. The advantage exists, but players must discover it without illegally discussing their
+                        cards. Since talking about the cards in hand is forbidden and can lead to disqualification, the
+                        game forces partners to communicate through play, memory, and timing rather than direct speech.
+                    </p>
+
+                   
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+              
+
+                <div class="implementation-body">
+                    
+                    <h4>1.5 Khasino, Respect, and Games Literacy</h4>
+                    <p>
+                        For me, Khasino is almost like a rite of passage, especially in my family and in the
+                        neighbourhood where I grew up in Kathlehong, Zuma Section. It is not often that a
+                        seventeen-year-old can sit down with a fifty-eight-year-old uncle, compete seriously, and even
+                        trash talk him in a way that is accepted as part of the game. But Khasino creates that kind of
+                        space. Inside the game, age does not disappear completely, but it becomes less important than
+                        skill, confidence, and decision-making. The game allows younger and older people to interact
+                        differently. It breaks down generational gaps and creates a space where people can speak freely,
+                        laugh, compete, and still respect one another. One memory that stands out happened during
+                        Christmas. One of my uncles suggested that we play Khasino, and he was surprised to find out
+                        that I knew how to play. We played four hands, and I was the youngest person at the table. At
+                        first, I could feel that I was not being treated as a serious threat. I was just the young one
+                        joining the elders. But when my partner and I won the first game, the atmosphere changed. I was
+                        no longer viewed only as a child. I became a serious contender. That moment showed how powerful
+                        the game can be socially. Mastery of Khasino created bonds that ordinary conversation might not
+                        have created. This connects strongly to Zagal's concept of ludoliteracy. Zagal argues that
+                        understanding games is not only about playing them, but also about analysing how games create
+                        meaning through systems, rules, culture, and player experience. Khasino is a good example
+                        because the meaning of the game does not only come from the cards. It comes from the people
+                        around the table, the seriousness of players, the trash talk, the memory skills, the family
+                        setting, and the respect that is earned through play. The rules create the structure, but the
+                        players create the culture.
+                    </p>
+
+                    
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+        <section id="elec-implementation" class="panel">
+            <div class="container">
+
+               
+
+                <div class="implementation-body">
+                    
+
+                    <h4>1.6 Conclusion</h4>
+                    <p>
+                        Khasino should be understood as more than a card game. It is a competitive system, a social
+                        practice, and a cultural space. Its complexity creates respect for mastery, while its social
+                        nature brings people together across generations. In my own experience, Khasino allowed me to
+                        connect with older family members in a way that ordinary conversation might not have allowed.
+                        Through the game, I moved from being seen only as a child to being recognised as a serious
+                        player. That is what makes Khasino meaningful: it does not only test cards; it tests memory,
+                        confidence, patience, and the ability to belong at the table.
+                    </p>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
     </main>
 
     <div class="side-nav-arrows">

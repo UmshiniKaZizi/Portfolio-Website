@@ -29,12 +29,16 @@ body.page-exiting {
     position: fixed;
     top: 0;
     left: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 1.5rem 3rem;
-    background-color: rgba(248, 249, 250, 0.95);
+
+    background-color:rgba(248, 249, 250, 0.75);
     border-bottom: 1px solid #CED4DA;
+
     z-index: 1000;
 }
 
@@ -64,21 +68,26 @@ body.page-exiting {
 .dropdown-content {
     display: none;
     position: absolute;
+
     background-color: #F8F9FA;
+
     min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.05);
+
     border: 1px solid #CED4DA;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+
     z-index: 1001;
 }
 
-.dropdown-content .nav-custom-btn {
-    display: block;
-    width: 100%;
-    text-align: left;
+.dropdown-content .nav-custom-btn:hover {
+    background-color: #E9ECEF;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+
+.nav-custom-btn:hover,
+.nav-custom-btn.active {
+    color: #A7AFB6;
 }
 
 /* DYNAMIC CUSTOM INTERACTION BUTTON MODIFIERS */
@@ -127,18 +136,25 @@ body.page-exiting {
 }
 
 .arrow-btn {
-    background: #CED4DA;
-    border: none;
+    background: #DEE2E6;
+    border: 1px solid #CED4DA;
+
     padding: 1rem;
+
     cursor: pointer;
+
     border-radius: 50%;
+
     font-size: 1.2rem;
+
     color: #1A1A1A;
-    transition: background 0.2s ease;
+
+    transition: all 0.25s ease;
 }
 
 .arrow-btn:hover {
     background: #A7AFB6;
+    transform: translateY(-2px);
 }
 
 /* ABOUT SECTION LAYOUT */
@@ -207,15 +223,25 @@ body.page-exiting {
 .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #A7AFB6;
 }
 
 .hero-tags span {
     display: inline-block;
+
     padding: 5px 15px;
+
     margin: 0 5px 2rem 5px;
+
+    background: #E9ECEF;
+
     border: 1px solid #CED4DA;
+
+    color: #1A1A1A;
+
     font-size: 0.9rem;
+
+    border-radius: 20px;
 }
 
 .cta-arrow {
@@ -245,7 +271,7 @@ body.page-exiting {
     width: 100%;
     padding: 12px;
     border: 1px solid #CED4DA;
-    background-color: #FFF;
+    background-color: #F8F9FA;
     font-family: 'Garamond', serif;
     font-size: 1rem;
 }
@@ -286,7 +312,7 @@ body.page-exiting {
     font-family: 'Trajan', serif;
     font-style: italic;
     font-size: 1.3rem;
-    color: #666;
+    color: #A7AFB6;
     width: 100%;
     text-align: center;
 }
@@ -429,4 +455,63 @@ body.page-exiting {
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+//other hero 
+#game-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* readability layer */
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.08); /* subtle light wash */
+}
+
+/* ensure text sits above */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+/*PLay Button*/
+.play-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 26px;
+
+    background: #1A1A1A;
+    color: #F8F9FA;
+
+    font-family: 'Trajan', serif;
+    font-size: 0.95rem;
+
+    border: 1px solid #CED4DA;
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+.play-btn:hover {
+    background: #E9ECEF;
+    color: #1A1A1A;
+
+    transform: scale(1.03);
 }
